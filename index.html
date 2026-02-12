@@ -24,6 +24,43 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <style>
+      .feedback-section {
+        background: #212529;
+      }
+
+      .feedback-card {
+        background: #f8f9fa;
+        border: 1px solid rgba(240, 95, 64, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        height: 100%;
+        padding: 1.75rem;
+      }
+
+      .feedback-card h3 {
+        color: #f05f40;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .feedback-card .form-control {
+        border-color: rgba(33, 37, 41, 0.2);
+      }
+
+      .feedback-card .form-control:focus {
+        border-color: #f05f40;
+        box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.2);
+      }
+
+      .feedback-card label {
+        color: #212529;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+      }
+    </style>
+
   </head>
 
   <body id="page-top">
@@ -316,6 +353,80 @@
         <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Join us now!</a>
       </div>
     </div>
+
+    <section id="feedback" class="feedback-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Share Your Feedback</h2>
+            <hr class="primary">
+            <p class="text-faded">Your voice helps us build stronger internships, events and learning experiences.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="feedback-card">
+              <h3>Program Feedback</h3>
+              <form>
+                <div class="form-group">
+                  <label for="programName">Name</label>
+                  <input type="text" class="form-control" id="programName" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="programEmail">Email</label>
+                  <input type="email" class="form-control" id="programEmail" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="programRating">Program Rating</label>
+                  <select id="programRating" class="form-control">
+                    <option selected>Choose a rating</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Needs improvement</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="programMessage">Suggestions</label>
+                  <textarea class="form-control" id="programMessage" rows="4" placeholder="Tell us what we can improve."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-xl">Submit Feedback</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="feedback-card">
+              <h3>Website Feedback</h3>
+              <form>
+                <div class="form-group">
+                  <label for="siteName">Name</label>
+                  <input type="text" class="form-control" id="siteName" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="siteEmail">Email</label>
+                  <input type="email" class="form-control" id="siteEmail" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="siteTopic">Topic</label>
+                  <select id="siteTopic" class="form-control">
+                    <option selected>Select a topic</option>
+                    <option>Design</option>
+                    <option>Content</option>
+                    <option>Accessibility</option>
+                    <option>Performance</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="siteMessage">Comments</label>
+                  <textarea class="form-control" id="siteMessage" rows="4" placeholder="Share your thoughts about the website."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-xl">Send Comments</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="contact">
       <div class="container">
